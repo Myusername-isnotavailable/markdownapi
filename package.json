@@ -7,20 +7,33 @@
     "start": "node src/index.js",
     "dev": "node --watch src/index.js"
   },
-  "keywords": ["markdown", "api", "url-to-markdown", "llm", "rag", "ai"],
+  "keywords": [
+    "markdown",
+    "api",
+    "url-to-markdown",
+    "llm",
+    "rag",
+    "ai"
+  ],
   "author": "MarkdownAPI",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@bitcoinerlab/secp256k1": "^1.2.0",
     "@mozilla/readability": "^0.6.0",
+    "bip32": "^5.0.1",
+    "bip39": "^3.1.0",
+    "bitcoinjs-lib": "^7.0.1",
     "compression": "^1.8.1",
     "cors": "^2.8.6",
+    "crypto-js": "^4.2.0",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "express-rate-limit": "^8.5.2",
     "helmet": "^8.2.0",
     "jsdom": "^29.1.1",
     "morgan": "^1.11.0",
-    "turndown": "^7.2.4"
+    "turndown": "^7.2.4",
+    "uuid": "^14.0.1"
   }
 }

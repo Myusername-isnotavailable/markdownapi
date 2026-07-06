@@ -9,6 +9,7 @@ const fs = require('fs');
 
 const markdownRoute = require('./routes/markdown');
 const { apiKeyAuth } = require('./middleware/auth');
+const paymentRoute = require('./routes/payment');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -48,6 +49,7 @@ app.use('/api/',
 );
 
 app.use('/api/markdown', markdownRoute);
+app.use('/api/payment', paymentRoute.router);
 
 app.use(express.static(path.join(__dirname, '..', 'public')));
 
